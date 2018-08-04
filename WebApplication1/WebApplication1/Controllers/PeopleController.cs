@@ -169,7 +169,7 @@ namespace WebApplication1.Controllers
                 }
             }
 
-            return StatusCode(HttpStatusCode.NoContent);
+            return Ok("THe Lastname " + person.lastname + " was updated!");
         }
 
         protected override void Dispose(bool disposing)

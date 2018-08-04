@@ -1,0 +1,759 @@
+{
+	"info": {
+		"_postman_id": "1c181de3-67ff-4f26-8d75-8b64a8efe5e2",
+		"name": "DXC People",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"_postman_id": "10a638e6-fd73-48b6-ae44-254a9be9346f",
+			"name": "UserStory 1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:52194/api/People",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52194",
+					"path": [
+						"api",
+						"People"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "9913c4b5-1f57-448f-8bba-9a1402f14d17",
+					"name": "UserStory 1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:52194/api/People/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "52194",
+							"path": [
+								"api",
+								"People",
+								"5"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "93",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Aug 2018 16:29:26 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Expires",
+							"value": "-1",
+							"name": "Expires",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319",
+							"name": "X-AspNet-Version",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?YzpcdXNlcnNcamVpc29uXGRvY3VtZW50c1x2aXN1YWwgc3R1ZGlvIDIwMTVcUHJvamVjdHNcV2ViQXBwbGljYXRpb24xXFdlYkFwcGxpY2F0aW9uMVxhcGlcUGVvcGxlXDU=?=",
+							"name": "X-SourceFiles",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"body": "{\"id\":5,\"name\":\"Lisa\",\"lastname\":\"Lei\",\"ssn\":\"047-92-9185\",\"birthdate\":\"1968-06-18T19:54:00\"}"
+				}
+			]
+		},
+		{
+			"_postman_id": "92933c59-2ab8-4e3f-b566-1c68825b5222",
+			"name": "UserStory 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": ""
+				},
+				"description": "As an Integrator, I need to connect to a service and get all People info"
+			},
+			"response": [
+				{
+					"id": "d76a41d7-eed2-4b8f-ad2f-ceb0e5ede111",
+					"name": "UserStory 2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:52194/api/People",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "52194",
+							"path": [
+								"api",
+								"People"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "686",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Aug 2018 16:36:32 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Expires",
+							"value": "-1",
+							"name": "Expires",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319",
+							"name": "X-AspNet-Version",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?YzpcdXNlcnNcamVpc29uXGRvY3VtZW50c1x2aXN1YWwgc3R1ZGlvIDIwMTVcUHJvamVjdHNcV2ViQXBwbGljYXRpb24xXFdlYkFwcGxpY2F0aW9uMVxhcGlcUGVvcGxl?=",
+							"name": "X-SourceFiles",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"body": "[{\"id\":1,\"name\":\"Steve\",\"lastname\":\"Johnson\",\"ssn\":\"503-31-0775\",\"birthdate\":\"2012-06-18T22:34:09\"},{\"id\":2,\"name\":\"Kawing\",\"lastname\":\"Chen\",\"ssn\":\"310-64-3101\",\"birthdate\":\"1999-03-15T06:34:00\"},{\"id\":3,\"name\":\"Saya\",\"lastname\":\"Fernandez\",\"ssn\":\"571-06-8423\",\"birthdate\":\"1972-11-22T10:25:00\"},{\"id\":4,\"name\":\"Luis\",\"lastname\":\"Corrales\",\"ssn\":\"445-04-5687\",\"birthdate\":\"1985-09-08T23:14:00\"},{\"id\":5,\"name\":\"Lisa\",\"lastname\":\"Lei\",\"ssn\":\"047-92-9185\",\"birthdate\":\"1968-06-18T19:54:00\"},{\"id\":6,\"name\":\"Kain\",\"lastname\":\"Chen\",\"ssn\":\"384-12-4251\",\"birthdate\":\"1997-03-15T09:24:00\"},{\"id\":7,\"name\":\"Charlotte\",\"lastname\":\"Beinz\",\"ssn\":\"680-40-7931\",\"birthdate\":\"1999-11-22T02:25:00\"}]"
+				}
+			]
+		},
+		{
+			"_postman_id": "a4b45cfe-3d93-4a55-9fb3-9d3bc4937b5c",
+			"name": "UserStory 3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": ""
+				},
+				"description": "As an Integrator, I need to connect to a service and get all People which his last name starts with an specific letter (can take 1 or more letter)"
+			},
+			"response": [
+				{
+					"id": "25dc0690-1eca-4bf7-90c1-9dbbefe3facd",
+					"name": "UserStory 3",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:52194/api/People/getbylastname/Ferna",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "52194",
+							"path": [
+								"api",
+								"People",
+								"getbylastname",
+								"Ferna"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "101",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Aug 2018 16:40:02 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Expires",
+							"value": "-1",
+							"name": "Expires",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319",
+							"name": "X-AspNet-Version",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?YzpcdXNlcnNcamVpc29uXGRvY3VtZW50c1x2aXN1YWwgc3R1ZGlvIDIwMTVcUHJvamVjdHNcV2ViQXBwbGljYXRpb24xXFdlYkFwcGxpY2F0aW9uMVxhcGlcUGVvcGxlXGdldGJ5bGFzdG5hbWVcRmVybmE=?=",
+							"name": "X-SourceFiles",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"body": "[{\"id\":3,\"name\":\"Saya\",\"lastname\":\"Fernandez\",\"ssn\":\"571-06-8423\",\"birthdate\":\"1972-11-22T10:25:00\"}]"
+				}
+			]
+		},
+		{
+			"_postman_id": "f62aa8ae-125a-4f65-a984-b41203e7423f",
+			"name": "UserStory 4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": ""
+				},
+				"description": "As an Integrator, I need to connect to a service and delete a specific element from People based on the SSN)"
+			},
+			"response": [
+				{
+					"id": "138bfce9-6a2b-4e78-a18f-1dac8d645b4d",
+					"name": "UserStory 4",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:52194/api/People/deletebyssn/506-15-5976",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "52194",
+							"path": [
+								"api",
+								"People",
+								"deletebyssn",
+								"506-15-5976"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "99",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Aug 2018 17:00:12 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Expires",
+							"value": "-1",
+							"name": "Expires",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319",
+							"name": "X-AspNet-Version",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?YzpcdXNlcnNcamVpc29uXGRvY3VtZW50c1x2aXN1YWwgc3R1ZGlvIDIwMTVcUHJvamVjdHNcV2ViQXBwbGljYXRpb24xXFdlYkFwcGxpY2F0aW9uMVxhcGlcUGVvcGxlXGRlbGV0ZWJ5c3NuXDUwNi0xNS01OTc2?=",
+							"name": "X-SourceFiles",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"body": "{\"id\":11,\"name\":\"Prueba\",\"lastname\":\"Prueba\",\"ssn\":\"506-15-5976\",\"birthdate\":\"1985-09-08T23:14:00\"}"
+				}
+			]
+		},
+		{
+			"_postman_id": "98db458c-fd07-42d5-a915-2cfe2041beba",
+			"name": "UserStory 5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": ""
+				},
+				"description": "As an Integrator, I need to connect to a service and get all the People info ordered by last name"
+			},
+			"response": [
+				{
+					"id": "553afd22-4717-4533-87dc-73624c5d5d2e",
+					"name": "UserStory 5",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:52194/api/Peoplebylastname",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "52194",
+							"path": [
+								"api",
+								"Peoplebylastname"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "686",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Aug 2018 17:04:46 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Expires",
+							"value": "-1",
+							"name": "Expires",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319",
+							"name": "X-AspNet-Version",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?YzpcdXNlcnNcamVpc29uXGRvY3VtZW50c1x2aXN1YWwgc3R1ZGlvIDIwMTVcUHJvamVjdHNcV2ViQXBwbGljYXRpb24xXFdlYkFwcGxpY2F0aW9uMVxhcGlcUGVvcGxlYnlsYXN0bmFtZQ==?=",
+							"name": "X-SourceFiles",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"body": "[{\"id\":7,\"name\":\"Charlotte\",\"lastname\":\"Beinz\",\"ssn\":\"680-40-7931\",\"birthdate\":\"1999-11-22T02:25:00\"},{\"id\":6,\"name\":\"Kain\",\"lastname\":\"Chen\",\"ssn\":\"384-12-4251\",\"birthdate\":\"1997-03-15T09:24:00\"},{\"id\":2,\"name\":\"Kawing\",\"lastname\":\"Chen\",\"ssn\":\"310-64-3101\",\"birthdate\":\"1999-03-15T06:34:00\"},{\"id\":4,\"name\":\"Luis\",\"lastname\":\"Corrales\",\"ssn\":\"445-04-5687\",\"birthdate\":\"1985-09-08T23:14:00\"},{\"id\":3,\"name\":\"Saya\",\"lastname\":\"Fernandez\",\"ssn\":\"571-06-8423\",\"birthdate\":\"1972-11-22T10:25:00\"},{\"id\":1,\"name\":\"Steve\",\"lastname\":\"Johnson\",\"ssn\":\"503-31-0775\",\"birthdate\":\"2012-06-18T22:34:09\"},{\"id\":5,\"name\":\"Lisa\",\"lastname\":\"Lei\",\"ssn\":\"047-92-9185\",\"birthdate\":\"1968-06-18T19:54:00\"}]"
+				}
+			]
+		},
+		{
+			"_postman_id": "9831169d-7c12-4c8f-ae4b-fa6bead60923",
+			"name": "UserStory 6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": ""
+				},
+				"description": "As an Integrator, I need to connect to a service and get the People info (including age) based on the SSN"
+			},
+			"response": [
+				{
+					"id": "e7f7f0a4-4c1c-40a0-b82d-ee2c55953279",
+					"name": "UserStory 6",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:52194/api/People/getbyssn/680-40-7931",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "52194",
+							"path": [
+								"api",
+								"People",
+								"getbyssn",
+								"680-40-7931"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "102",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Aug 2018 17:19:16 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Expires",
+							"value": "-1",
+							"name": "Expires",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319",
+							"name": "X-AspNet-Version",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?YzpcdXNlcnNcamVpc29uXGRvY3VtZW50c1x2aXN1YWwgc3R1ZGlvIDIwMTVcUHJvamVjdHNcV2ViQXBwbGljYXRpb24xXFdlYkFwcGxpY2F0aW9uMVxhcGlcUGVvcGxlXGdldGJ5c3NuXDY4MC00MC03OTMx?=",
+							"name": "X-SourceFiles",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"body": "[{\"id\":7,\"name\":\"Charlotte\",\"lastname\":\"Beinz\",\"ssn\":\"680-40-7931\",\"birthdate\":\"1999-11-22T02:25:00\"}]"
+				}
+			]
+		},
+		{
+			"_postman_id": "e6dfe9de-cb9e-40f7-bfa7-0c0f2f525763",
+			"name": "UserStory 7",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"id": "7d43bcec-0e52-4992-9556-d1a0f68ef383",
+					"name": "UserStory 7",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"disabled": false
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":4,\"name\":\"Luis\",\"lastname\":\"Zapata\",\"ssn\":\"445-04-5687\",\"birthdate\":\"1985-09-08T23:14:00\"}"
+						},
+						"url": {
+							"raw": "http://localhost:52194/api/people/UpdatePerson/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "52194",
+							"path": [
+								"api",
+								"people",
+								"UpdatePerson",
+								"4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "7",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 04 Aug 2018 17:26:44 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Expires",
+							"value": "-1",
+							"name": "Expires",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-AspNet-Version",
+							"value": "4.0.30319",
+							"name": "X-AspNet-Version",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"key": "X-SourceFiles",
+							"value": "=?UTF-8?B?YzpcdXNlcnNcamVpc29uXGRvY3VtZW50c1x2aXN1YWwgc3R1ZGlvIDIwMTVcUHJvamVjdHNcV2ViQXBwbGljYXRpb24xXFdlYkFwcGxpY2F0aW9uMVxhcGlccGVvcGxlXFVwZGF0ZVBlcnNvblw0?=",
+							"name": "X-SourceFiles",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"body": "\"Nunes\""
+				}
+			]
+		}
+	]
+}
