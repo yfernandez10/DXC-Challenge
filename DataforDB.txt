@@ -1,0 +1,12 @@
+USE [dxcchallenge]
+GO
+
+
+INSERT INTO dbo.People
+VALUES ('Lisa', 'Lei', '047-92-9185', convert(datetime,'18-06-68 07:54:00 PM', 4)),
+('Saya', 'Fernandez', '047-85-9452', convert(datetime,'19-02-99 08:20:00 PM', 4)),
+('Ana', 'Chen', '084-62-4587', convert(datetime,'26-08-84 06:36:00 PM', 4)),
+('Steve', 'Johnson', '192-35-6547', convert(datetime,'17-01-97 07:54:00 PM', 4)),
+('Sophia', 'Chen', '384-12-4251', convert(datetime,'15-03-97 9:24:00 AM', 4)),
+('Charlotte', 'Beinz', '680-40-7931', convert(datetime,'22-11-99 02:25:00 aM', 4)),
+('Ricardo', 'Perez', '506-15-5976', convert(datetime,'08-09-85 11:14:00 PM', 4));

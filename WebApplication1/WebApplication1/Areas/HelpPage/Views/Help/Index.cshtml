@@ -1,0 +1,53 @@
+@using System.Web.Http
+@using System.Web.Http.Controllers
+@using System.Web.Http.Description
+@using System.Collections.ObjectModel
+@using WebApplication1.Areas.HelpPage.Models
+@model Collection<ApiDescription>
+
+@{
+    ViewBag.Title = "People API HelpPage";
+
+    // Group APIs by controller
+    ILookup<HttpControllerDescriptor, ApiDescription> apiGroups = Model.ToLookup(api => api.ActionDescriptor.ControllerDescriptor);
+}
+
+<link type="text/css" href="~/Areas/HelpPage/HelpPage.css" rel="stylesheet" />
+<header class="help-page">
+    <div class="content-wrapper">
+        <div class="float-left">
+            <h1>@ViewBag.Title</h1>
+        </div>
+    </div>
+</header>
+<div id="body" class="help-page">
+    <section class="featured">
+        <div class="content-wrapper">
+            <h2>People API</h2>
+            <p>For a better test, try to use Postman 
+                <a href="https://www.getpostman.com/">Postman</a> 
+            </p>
+            <p> User Stories</p>
+            <p> 1       As an Integrator, I need to connect to a service and get People info filtering by ID</p>
+            <p>Example: GET: api/People/5</p>
+            <p> 2       As an Integrator, I need to connect to a service and get all People info</p>
+            <p>Example: GET: api/People</p>
+            <p> 3       As an Integrator, I need to connect to a service and get all People which his last name starts with an specific letter (can take 1 or more letter)</p>
+            <p>Example: GET: api/People/getbylastname/Ferna</p>
+            <p> 4       As an Integrator, I need to connect to a service and delete a specific element from People based on the SSN)</p>
+            <p>Example: DELETE: api/People/deletebyssn/506-15-5976</p>
+            <p> 5       As an Integrator, I need to connect to a service and get all the People info ordered by last name</p>
+            <p>Example: GET: api/Peoplebylastname</p>
+            <p> 6       As an Integrator, I need to connect to a service and get the People info (including age) based on the SSN</p>
+            <p>Example: GET: api/People/getbyssn/680-40-7931</p>
+            <p> 7       As an Integrator, I need to connect to a service and update a People last name based on the id</p>
+            <p>Example: POST: api/People/UpdatePerson/4</p>        
+        </div>
+    </section>
+    <section class="content-wrapper main-content clear-fix">
+        @foreach (var group in apiGroups)
+        {
+            @Html.DisplayFor(m => group, "ApiGroup")
+        }
+    </section>
+</div>
